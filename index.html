@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<audio id='audio' controls>
+	<source id='src'>
+</audio>
+
+<script type="text/javascript">
+	document.getElementById('src').src = location.hash.substr(1);
+	document.getElementById('audio').load();
+</script>
+
+</body>
+</html>
